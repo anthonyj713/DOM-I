@@ -107,7 +107,7 @@ let footerText = document.querySelectorAll('p');
   footerText[8].textContent = siteContent['footer']['copyright'];
 
 let links = document.getElementsByTagName('a');
-Array.from(links).forEach((link) => {
+  Array.from(links).forEach((link) => {
   link.style.color = "green"
 })
 
