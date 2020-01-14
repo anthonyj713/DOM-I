@@ -71,7 +71,7 @@ let aboutText = document.querySelectorAll('p');
   aboutText[1].textContent = siteContent['main-content']['about-content'];
 
 let midImg = document.getElementById("middle-img");
-  idImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+  midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 let servicesHeader = document.querySelectorAll('h4');
   servicesHeader[2].textContent = siteContent['main-content']['services-h4'];
@@ -111,7 +111,7 @@ let links = document.getElementsByTagName('a');
   link.style.color = "green"
 })
 
-let blogContent = document.createElement('nav'); 
+let blogContent = document.createElement('a'); 
   blogContent.textContent = "Blog";
   blogContent.style.color = "green";
 
@@ -119,7 +119,7 @@ let blogContent = document.createElement('nav');
 let blog = document.querySelector('nav');
   blog.prepend(blogContent);
 
-let logInContent = document.createElement('nav');
+let logInContent = document.createElement('a');
   logInContent.textContent = "Log In";
   logInContent.style.color = "green";
 
